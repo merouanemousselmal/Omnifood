@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quiries.css">
-    <title>Omnifood</title>
+    <title>Omnifood - Never cooking again</title>
 </head>
 <body>
     <header class="header">
         <img class="logo" src="/imgs/omnifood-logo.png" alt="Omnifood logo">
         <nav class="main-nav">
             <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">How It works</a></li>
-            <li><a class="main-nav-link" href="#">Meals</a></li>
-            <li><a class="main-nav-link" href="#">Testimonials</a></li>
-            <li><a class="main-nav-link" href="#">Pricing</a></li>
-            <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+            <li><a class="main-nav-link" href="#how">How It works</a></li>
+            <li><a class="main-nav-link" href="#meals">Meals</a></li>
+            <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -31,8 +32,8 @@
   <div class="hero-text-box">
         <h1 class="heading-primary">A healthy meal delivered to your door, every single day </h1>
         <p class="hero-description">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
-        <a href="#" class="btn main-btn margin-right-sm">Start eating well</a>
-        <a href="#" class="btn second-btn">Learn more &darr;</a>
+        <a href="#cta" class="btn main-btn margin-right-sm">Start eating well</a>
+        <a href="#how" class="btn second-btn">Learn more &darr;</a>
 
         <div class="delivered-meals">
             <div class="delivered-imgs">
@@ -69,7 +70,7 @@
 
 
 
-<section class="section-how">
+<section class="section-how" id="how">
 
      <div class="container">
          <span class="subheading">How it works</span>
@@ -110,7 +111,7 @@
   </section>
         
 
-<section class="section-meals">
+<section class="section-meals" id="meals">
           <div class="container center-text">
               <span class="subheading">How it works</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -169,7 +170,7 @@
 </section>
 
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
       <div class="testimonials-container">
         <span class="subheading">Testimonials</span>
         <h2 class="heading-secondary">Once you try it, you like it</h2>
@@ -245,7 +246,7 @@
 
 
 
-    <section class="section-pricing ">
+    <section class="section-pricing" id="pricing">
         <div class="container">
             <span class="subheading">How it works</span>
             <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -319,7 +320,7 @@
         </div>
     </section>
 
-     <section class="section-cta">
+     <section class="section-cta" id="cta">
          <div class="container">
              <div class="cta">  
                  <div class="cta-text-box">
@@ -328,20 +329,20 @@
                     </p>
 
                     <!--video 124   -->
-                    <form class="cta-form" action="#">
+                    <form class="cta-form"  name="sign-up" netlify>
                         <div>
                             <label for="full-name">Full Name</label>
-                            <input id="fill-name" type="text" placeholder="Merouane Mousselmal" required>
+                            <input id="fill-name" name="name" type="text" placeholder="Merouane Mousselmal" required>
                         </div>
                
                         <div>
                            <label for="email">Email Adress</label>
-                           <input id="email" type="email" placeholder="me@example.com" required>
+                           <input id="email" name="email" type="email" placeholder="me@example.com" required>
                        </div>
                
                        <div>
                            <label for="select-where">Where did you hear from us?</label>
-                           <select id="select-where" required>
+                           <select name="select-where" id="select-where" required>
                                <option value="">Please select one option:</option>
                                <option value="friends">Friends and family</option>
                                <option value="youtube">Youtube video</option>
@@ -371,7 +372,7 @@
                 <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
                 <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
             </ul>
-            <p class="copyright">copyright &copy; 2027 by Omnifood, Inc. All rights reserved</p>
+            <p class="copyright">copyright &copy; 2022 by Omnifood, Inc. All rights reserved</p>
         </div>
 
         <div class="address-col">
@@ -413,7 +414,7 @@
         </div>
     </div>
 </footer>
-
+<script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
